@@ -18,11 +18,13 @@ function TicketList() {
     }, [])
 
     return (
-        <div>
+        <div className="container m-5">
+            <h3 className="text-center">Maintenance Tickets</h3>
+
             {
                 ticketList.map(function (i, index) {
                     return (
-                        <Ticket title = {i.title} body={i.body} compleyed={i.completed}></Ticket>
+                        <Ticket title={i.title} body={i.body} completed={i.completed}></Ticket>
                     )
                 })
 

@@ -1,0 +1,9 @@
+.cardHeading{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cardSubHeading{
+    font-weight: bold;
+}
