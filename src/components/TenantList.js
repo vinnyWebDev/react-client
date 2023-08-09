@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Tenant from "./Tenant"
+import TenantForm from "./TenantForm";
 
 function TenantList() {
     const [tenantList, setTenantList] = useState([]);
@@ -30,6 +31,7 @@ function TenantList() {
 
 
             }
+            <TenantForm/>
         </div>
     )
 }

@@ -31,40 +31,39 @@ function TicketForm() {
         )
         let data = response.data;
         console.log(response.data);
+        window.location.reload();
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Title:
-                    <input name="title" value={title} type="text" onChange={handleTitle}></input>
-                </label>
-                <label>
-                    Body:
-                    <textarea name="title" value={body} type="text" onChange={handleBody}></textarea>
-                </label>
+        <div className="container mt-5">
+            <h3 className="text-center">Add Maintenance Ticket</h3>
 
-                <label>Completed</label>
-                <input
-                    type="radio"
-                    name="topping"
-                    value={true}
-                    onChange={handleCompleted}
-                />
-                <label htmlFor="regular">False</label>
+            <div className="container mt-3">
+                <form className="formContainer" onSubmit={handleSubmit}>
+                    <label className="cardSubHeading ">
+                        Title:
+                        <input name="title" value={title} type="text" onChange={handleTitle} className="form-control"></input>
+                    </label>
+                    <label className="cardSubHeading mb-3">
+                        Body:
+                        <textarea name="title" value={body} type="text" onChange={handleBody} className="form-control"></textarea>
+                    </label>
 
-                <input
-                    type="radio"
-                    name="topping"
-                    value={false}
-                    onChange={handleCompleted}
-                />
-                <label htmlFor="regular">True</label>
+                    <label className="cardSubHeading mb-3">Completed</label>
 
-                <button type="submit">Submit</button>
-            </form>
+                    <label className="cardSubHeading mb-3" htmlFor="regular">
+                        False
+                        <input className="radio" type="radio" name="topping" value={false} onChange={handleCompleted} />
+                    </label>
 
+                    <label className="cardSubHeading mb-3" htmlFor="regular">
+                        True
+                        <input className="radio" type="radio" name="topping" value={true} onChange={handleCompleted} />
+                    </label>
+
+                    <button className="formBtn btn btn-dark mt-3 mb-5" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     )
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Ticket from "./Ticket"
+import TicketForm from "./TicketForm";
 
 function TicketList() {
     const [ticketList, setTicketList] = useState([]);
@@ -30,6 +31,7 @@ function TicketList() {
 
 
             }
+            <TicketForm></TicketForm>
         </div>
     )
 }

@@ -7,3 +7,16 @@
 .cardSubHeading{
     font-weight: bold;
 }
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBtn{
+    max-width: 20%;
+}
+
+.radio{
+    margin-left: 15px;
+}

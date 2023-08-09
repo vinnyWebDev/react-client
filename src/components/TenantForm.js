@@ -40,39 +40,43 @@ function TenantForm() {
         )
         let data = response.data;
         console.log(response.data);
+        window.location.reload();
     }
 
     //form for taking input when creating a new tenant 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
+        <div className="container mt-5">
+            <h3 className="text-center">Add Tenant</h3>
+            <div className="container mt-3">
+            <form className="formContainer" onSubmit={handleSubmit}>
+                <label className="cardSubHeading mb-3">
                     First Name:
-                    <input name="first name" value={firstName} type="Text" onChange={handleFirstName} required />
+                    <input className="form-control" name="first name" value={firstName} type="Text" onChange={handleFirstName} required />
                 </label>
 
-                <label>
+                <label className="cardSubHeading mb-3">
                     Last Name:
-                    <input name="second name" value={lastName} type="Text" onChange={handleLastName} required />
+                    <input className="form-control" name="second name" value={lastName} type="Text" onChange={handleLastName} required />
                 </label>
 
-                <label>
+                <label className="cardSubHeading mb-3">
                     Apartment:
-                    <input name="apartment" value={apartment} type="Text" onChange={handleApartment} required />
+                    <input className="form-control" name="apartment" value={apartment} type="Text" onChange={handleApartment} required />
                 </label>
 
-                <label>
+                <label className="cardSubHeading mb-3">
                     Phone:
-                    <input name="phone" value={phone} type="Text" onChange={handlePhone} minlength="10" maxlength="10"  required />
+                    <input className="form-control" name="phone" value={phone} type="Text" onChange={handlePhone} minlength="10" maxlength="10"  required />
                 </label>
 
-                <label>
+                <label className="cardSubHeading mb-3">
                     Email:
-                    <input name="email" value={email} type="email" onChange={handleEmail} required />
+                    <input className="form-control" name="email" value={email} type="email" onChange={handleEmail} required />
                 </label>
 
-                <button type="submit">Submit</button>
+                <button className="formBtn btn btn-dark mt-3 mb-5" type="submit">Submit</button>
             </form>
+            </div>
         </div>
     )
 }
