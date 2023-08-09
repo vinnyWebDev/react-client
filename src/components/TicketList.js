@@ -25,7 +25,7 @@ function TicketList() {
             {
                 ticketList.map(function (i, index) {
                     return (
-                        <Ticket title={i.title} body={i.body} completed={i.completed}></Ticket>
+                        <Ticket title={i.title} body={i.body} completed={i.completed} id={i.id}></Ticket>
                     )
                 })
 

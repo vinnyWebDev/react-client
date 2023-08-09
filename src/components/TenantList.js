@@ -25,7 +25,7 @@ function TenantList() {
             {
                 tenantList.map(function (i, index) {
                     return (
-                        <Tenant firstName={i.first_name} lastName={i.last_name} apartment={i.apartment} phone={i.phone} email={i.email}></Tenant>
+                        <Tenant id={i.id} firstName={i.first_name} lastName={i.last_name} apartment={i.apartment} phone={i.phone} email={i.email}></Tenant>
                     )
                 })
 
