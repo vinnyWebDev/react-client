@@ -45,9 +45,9 @@ function TenantForm() {
 
     //form for taking input when creating a new tenant 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 ">
             <h3 className="text-center">Add Tenant</h3>
-            <div className="container mt-3">
+            <div className="container mt-3 border rounded pt-3 mb-5">
             <form className="formContainer" onSubmit={handleSubmit}>
                 <label className="cardSubHeading mb-3">
                     First Name:

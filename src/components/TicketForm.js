@@ -38,7 +38,7 @@ function TicketForm() {
         <div className="container mt-5">
             <h3 className="text-center">Add Maintenance Ticket</h3>
 
-            <div className="container mt-3">
+            <div className="container mt-3 border rounded pt-3 mb-5">
                 <form className="formContainer" onSubmit={handleSubmit}>
                     <label className="cardSubHeading ">
                         Title:

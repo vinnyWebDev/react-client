@@ -51,7 +51,7 @@ function Tenant(props) {
     }
 
     return (
-        <div className="container border rounded m-4 row">
+        <div className="container border rounded m-4 p-3 row">
 
             <div className="container col ">
                 <p className="cardHeading">Apartment: {props.apartment}</p>
