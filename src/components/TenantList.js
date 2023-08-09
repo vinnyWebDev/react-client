@@ -18,7 +18,9 @@ function TenantList() {
     }, [])
 
     return (
-        <div>
+        <div className="container mt-5">
+            <h3 className="text-center">Tenants</h3>
+
             {
                 tenantList.map(function (i, index) {
                     return (

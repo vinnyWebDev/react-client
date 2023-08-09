@@ -18,7 +18,7 @@ function TicketList() {
     }, [])
 
     return (
-        <div className="container m-5">
+        <div className="container mt-5">
             <h3 className="text-center">Maintenance Tickets</h3>
 
             {

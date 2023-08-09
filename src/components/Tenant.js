@@ -1,14 +1,13 @@
 import React from "react";
 
-function Tenant(props){
-    return(
-        <div>
-            <h3>Tenant</h3>
-            <p>First Name: {props.firstName}</p>
-            <p>Last Name: {props.lastName}</p>
-            <p>Apartment: {props.apartment}</p>
-            <p>Phone: {props.phone}</p>
-            <p>Email: {props.email}</p>
+function Tenant(props) {
+    return (
+        <div className="container border rounded m-4">
+            <p className="cardHeading">Apartment: {props.apartment}</p>
+            <p><span className="cardSubHeading">First Name:</span> {props.firstName}</p>
+            <p><span className="cardSubHeading">Last Name:</span> {props.lastName}</p>
+            <p><span className="cardSubHeading">Phone:</span> {props.phone}</p>
+            <p><span className="cardSubHeading">Email:</span> {props.email}</p>
         </div>
     )
 }
