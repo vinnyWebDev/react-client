@@ -66,32 +66,19 @@ function Tenant(props) {
             <div className="container col ">
                 <p className="cardHeading">Update tenant</p>
                 <form className="formContainer" onSubmit={handleSubmit}>
-                    <label className="cardSubHeading mb-3">
-                        First Name:
-                        <input className="form-control" name="first name" value={firstName} type="Text" onChange={handleFirstName} required />
-                    </label>
+                    
+                        <input className="form-control mb-2" name="first name" value={firstName} type="Text" onChange={handleFirstName} placeholder="First Name" required />
+                 
+                        <input className="form-control mb-2" name="second name" value={lastName} type="Text" onChange={handleLastName} placeholder="Last Name" required />
 
-                    <label className="cardSubHeading mb-3">
-                        Last Name:
-                        <input className="form-control" name="second name" value={lastName} type="Text" onChange={handleLastName} required />
-                    </label>
+                        <input className="form-control mb-2" name="apartment" value={apartment} type="Text" onChange={handleApartment} placeholder="Apartment" required />
 
-                    <label className="cardSubHeading mb-3">
-                        Apartment:
-                        <input className="form-control" name="apartment" value={apartment} type="Text" onChange={handleApartment} required />
-                    </label>
+                        <input className="form-control mb-2" name="phone" value={phone} type="Text" onChange={handlePhone} minlength="10" maxlength="10" placeholder="Phone" required />
+                    
+                        <input className="form-control mb-2" name="email" value={email} type="email" onChange={handleEmail} placeholder="Email" required />
+                    
 
-                    <label className="cardSubHeading mb-3">
-                        Phone:
-                        <input className="form-control" name="phone" value={phone} type="Text" onChange={handlePhone} minlength="10" maxlength="10" required />
-                    </label>
-
-                    <label className="cardSubHeading mb-3">
-                        Email:
-                        <input className="form-control" name="email" value={email} type="email" onChange={handleEmail} required />
-                    </label>
-
-                    <button className="formBtn btn btn-dark mt-3 mb-5" type="submit">Submit</button>
+                    <button className="formBtn btn btn-dark mt-2 mb-3" type="submit">Submit</button>
                 </form>
             </div>
         </div>
