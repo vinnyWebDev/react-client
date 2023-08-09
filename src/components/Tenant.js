@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Tenant(props) {
 
-    //try add a function in here for handle delete with a button
+    //handle item deletion based on unique ID
     async function deleteItem(e){
        e.preventDefault();
        
