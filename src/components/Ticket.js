@@ -22,7 +22,7 @@ function Ticket(props) {
         setCompleted(e.target.value)
     }
 
-
+    //update item based on ID
     async function handleSubmit(e) {
         e.preventDefault();
         let response = await axios.put(`http://localhost:3000/tickets/${props.id}`,
@@ -76,7 +76,7 @@ function Ticket(props) {
                         <input className="radio" type="radio" name="topping" value={true} onChange={handleCompleted} />
                     </label>
 
-                    <button className="formBtn btn btn-dark mt-3 mb-5" type="submit">Update</button>
+                    <button className="formBtn btn btn-dark mt-3 mb-3" type="submit">Update</button>
                 </form>
             </div>
         </div>

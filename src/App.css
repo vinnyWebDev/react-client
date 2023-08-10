@@ -1,22 +1,28 @@
-.cardHeading{
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeading {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.cardSubHeading{
+.cardSubHeading {
     font-weight: bold;
 }
 
-.formContainer{
+.formContainer {
     display: flex;
     flex-direction: column;
 }
 
-.formBtn{
+.formBtn {
     max-width: 20%;
 }
 
-.radio{
+.radio {
     margin-left: 15px;
 }
